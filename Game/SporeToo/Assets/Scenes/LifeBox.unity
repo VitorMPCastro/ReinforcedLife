@@ -174,8 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e53ad542071c9b04daad5d91fe34fc69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedSlider: {fileID: 303983159}
-  stepSlider: 10
 --- !u!114 &303983159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -878,6 +876,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489489151}
   m_CullTransparentMesh: 1
+--- !u!1 &1491941624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1491941626}
+  - component: {fileID: 1491941625}
+  m_Layer: 0
+  m_Name: Food Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1491941625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491941624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948bdeb9c5cae1f439d7667c2eaca65d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodTypes:
+  - prefab: {fileID: 3124704861371366067, guid: 0775049a4ec98fc4887ce368396ea82f, type: 3}
+    spawnRatio: 1
+  - prefab: {fileID: 6798563321991151755, guid: 8227f849c197e9f49afcc9fb3a5d7847, type: 3}
+    spawnRatio: 1
+  maxFoodCount: 50
+  spawnAreaSize: {x: 20, y: 20, z: 20}
+  foodLifetimeTicks: 2
+--- !u!4 &1491941626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491941624}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1774181415
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,7 +957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4a2840517334d443baf56cd7e53ec73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeScale: 1
+  _tickInterval: 1
 --- !u!4 &1774181417
 Transform:
   m_ObjectHideFlags: 0
@@ -1316,3 +1366,4 @@ SceneRoots:
   - {fileID: 1882040794}
   - {fileID: 1859338515}
   - {fileID: 1774181417}
+  - {fileID: 1491941626}

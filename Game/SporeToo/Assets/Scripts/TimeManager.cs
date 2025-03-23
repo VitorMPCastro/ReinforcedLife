@@ -1,34 +1,24 @@
 using System;
 using UnityEngine;
 
-public class TimeManager : MonoBehaviour
+public class TimeTickManager : MonoBehaviour
 {
-    public static TimeManager Instance;
-    [SerializeField]
-    public float timeScale = 1f; // Velocidade da simulação
-
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+    public static event Action OnTick;
+    [SerializeField] private float _tickInterval = 1f; // Default to 1 second per tick
+    private float _tickTimer;
 
     private void Update()
     {
-        Debug.Log("Tick Tock " + Time.time);
-        Time.timeScale = timeScale;
+        _tickTimer += Time.deltaTime;
+        if (_tickTimer >= _tickInterval)
+        {
+            _tickTimer -= _tickInterval;
+            OnTick?.Invoke();
+        }
     }
 
-    public void SetSimulationSpeed(float speed)
+    public void SetTickInterval(float interval)
     {
-        Debug.Log(speed);
-        timeScale = Mathf.Clamp(speed, 0.1f, 10f); // Limitando a velocidade
+        _tickInterval = interval;
     }
 }

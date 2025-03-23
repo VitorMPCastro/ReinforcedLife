@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class SimulationSpeedControl : MonoBehaviour
-{
+{/*
     public Slider speedSlider;
     [SerializeField]
     private int stepSlider = 10;
@@ -14,6 +14,6 @@ public class SimulationSpeedControl : MonoBehaviour
 
     void SetSimulationSpeed(float speed)
     {
-        TimeManager.Instance.SetSimulationSpeed(speed/stepSlider);
-    }
+        TimeTickManager.Instance.SetSimulationSpeed(speed/stepSlider);
+    }*/
 }
