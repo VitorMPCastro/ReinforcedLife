@@ -152,3 +152,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fec708e21bad2e4aae9e1485a659a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foodData: {fileID: 11400000, guid: 86b6dc6465cc7e54090532917d4cf3b2, type: 2}

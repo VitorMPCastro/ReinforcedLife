@@ -4,21 +4,19 @@ using UnityEngine;
 public class TimeTickManager : MonoBehaviour
 {
     public static event Action OnTick;
-    [SerializeField] private float _tickInterval = 1f; // Default to 1 second per tick
+    [SerializeField] private float tickInterval = 1f;
     private float _tickTimer;
 
     private void Update()
     {
         _tickTimer += Time.deltaTime;
-        if (_tickTimer >= _tickInterval)
-        {
-            _tickTimer -= _tickInterval;
-            OnTick?.Invoke();
-        }
+        if (!(_tickTimer >= tickInterval)) return;
+        _tickTimer -= tickInterval;
+        OnTick?.Invoke();
     }
 
     public void SetTickInterval(float interval)
     {
-        _tickInterval = interval;
+        tickInterval = interval;
     }
 }
