@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8052782797191854202}
   - component: {fileID: 4740844381009335678}
   - component: {fileID: 2377611550750862904}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Jube Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
