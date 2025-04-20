@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: CarnivoreType
   m_EditorClassIdentifier: 
   type: 1
-  lifetimeTicks: 2
+  lifetimeTicks: 15

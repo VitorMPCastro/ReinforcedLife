@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6245094536123770147}
   - component: {fileID: 2017685661073702577}
   - component: {fileID: 2798067887553059055}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3513490269815430344}
   - component: {fileID: 8950175214066917126}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Joomla Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}

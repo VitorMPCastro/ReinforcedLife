@@ -52,6 +52,7 @@ namespace FoodNamespace
             );
 
             var newFood = Instantiate(foodPrefab, spawnPosition, Quaternion.identity);
+            newFood.layer = LayerMask.NameToLayer("Food");
             _activeFood.Add(newFood);
         }
 
