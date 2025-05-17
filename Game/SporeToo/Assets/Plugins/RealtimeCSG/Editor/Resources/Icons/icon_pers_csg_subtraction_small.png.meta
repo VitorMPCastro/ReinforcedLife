@@ -55,3 +55,10 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 69542
+  packageName: Realtime CSG
+  packageVersion: 1.558
+  assetPath: Assets/Plugins/RealtimeCSG/Editor/Resources/Icons/icon_pers_csg_subtraction_small.png
+  uploadId: 383425
