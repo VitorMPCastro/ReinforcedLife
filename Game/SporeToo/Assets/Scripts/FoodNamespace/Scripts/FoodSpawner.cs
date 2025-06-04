@@ -12,6 +12,7 @@ namespace FoodNamespace
         {
             public GameObject prefab;
             public float spawnRatio;
+
         }
 
         [SerializeField] private List<FoodType> foodTypes;
@@ -58,6 +59,7 @@ namespace FoodNamespace
 
         private GameObject ChooseFoodType()
         {
+            
             var totalWeight = foodTypes.Sum(type => type.spawnRatio);
 
             var randomValue = Random.Range(0, totalWeight);

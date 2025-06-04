@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: HerbivoreType
   m_EditorClassIdentifier: 
   type: 0
-  lifetimeTicks: 30
+  lifetimeTicks: 1
