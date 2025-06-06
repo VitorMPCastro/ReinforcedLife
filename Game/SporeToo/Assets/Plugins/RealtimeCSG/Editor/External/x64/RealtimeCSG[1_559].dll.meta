@@ -25,3 +25,10 @@ PluginImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 69542
+  packageName: Realtime CSG
+  packageVersion: 1.558
+  assetPath: Assets/Plugins/RealtimeCSG/Editor/External/x64/RealtimeCSG[1_559].dll
+  uploadId: 383425

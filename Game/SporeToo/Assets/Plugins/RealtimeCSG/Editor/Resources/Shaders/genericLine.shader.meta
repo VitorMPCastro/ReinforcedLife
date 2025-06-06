@@ -7,3 +7,10 @@ ShaderImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 69542
+  packageName: Realtime CSG
+  packageVersion: 1.558
+  assetPath: Assets/Plugins/RealtimeCSG/Editor/Resources/Shaders/genericLine.shader
+  uploadId: 383425
