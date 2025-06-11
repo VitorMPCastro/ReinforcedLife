@@ -3,6 +3,7 @@ using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
 using FoodNamespace;
+using UnityEngine.UIElements;
 
 namespace AgentNamespace
 {
@@ -13,6 +14,7 @@ namespace AgentNamespace
         [SerializeField] private float rotationSpeed = 10f;
         [SerializeField] private float moveHeight = 5f;
         [SerializeField] private GameObject foodPrefab;
+        [SerializeField] private float foodScale = 1f;
         [SerializeField] private Transform area;
 
         private Rigidbody _rb;
@@ -35,19 +37,20 @@ namespace AgentNamespace
             if (currentFood != null)
                 Destroy(currentFood.gameObject);
 
-            // Cria nova comida em posição aleatória
-            Vector3 foodPos = new Vector3(Random.Range(-4f, 4f), 0.5f, Random.Range(-4f, 4f));
+            // Cria nova comida em posiï¿½ï¿½o aleatï¿½ria
+            Vector3 foodPos = new Vector3(Random.Range(-10f, 10f), 0.5f, Random.Range(-10f, 10f));
             GameObject foodObj = Instantiate(foodPrefab, foodPos, Quaternion.identity, area);
+            foodObj.transform.localScale = new Vector3(foodScale, foodScale, foodScale);
             currentFood = foodObj.GetComponent<Food>();
         }
 
         public override void CollectObservations(VectorSensor sensor)
         {
-            sensor.AddObservation(transform.localPosition); // posição do agente
+            sensor.AddObservation(transform.localPosition); // posiï¿½ï¿½o do agente
             if (currentFood != null)
-                sensor.AddObservation(currentFood.transform.localPosition); // posição da comida
+                sensor.AddObservation(currentFood.transform.localPosition); // posiï¿½ï¿½o da comida
             else
-                sensor.AddObservation(Vector3.zero); // caso comida não exista
+                sensor.AddObservation(Vector3.zero); // caso comida nï¿½o exista
             sensor.AddObservation(_rb.velocity); // velocidade
         }
 
