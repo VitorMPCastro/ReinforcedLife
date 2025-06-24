@@ -49,9 +49,9 @@ O treinamento dos agentes é feito através de um ambiente Python separado. As i
         ```bash
         source mlagents-env/bin/activate
         ```
-5.  Com o ambiente ativo, instale todas as dependências necessárias com um único comando. Ele lerá o arquivo `requirements.txt` e instalará as versões exatas de cada pacote.
+5.  Com o ambiente ativo, instale o pacote ml-agents. O pip (gerenciador de pacotes do Python) cuidará de baixar o ml-agents e suas dependências principais, como o PyTorch.
     ```bash
-    pip install -r requirements.txt
+    pip install mlagents
     ```
 
 Seu ambiente de desenvolvimento está pronto\!
