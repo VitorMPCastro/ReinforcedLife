@@ -1,0 +1,68 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1750733510",
+        "python_version": "3.10.8 (tags/v3.10.8:aaaf517, Oct 11 2022, 16:50:30) [MSC v.1933 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\Alexandre\\Documents\\FATEC\\5o semestre\\AmbientePython\\mlagents-env\\Scripts\\mlagents-learn player_config.yaml --run-id=MeuPrimeiroTreino",
+        "mlagents_version": "1.1.0",
+        "mlagents_envs_version": "1.1.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.7.1+cpu",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1750733640"
+    },
+    "total": 130.57088179999846,
+    "count": 1,
+    "self": 0.01195069999084808,
+    "children": {
+        "run_training.setup": {
+            "total": 0.18560100000468083,
+            "count": 1,
+            "self": 0.18560100000468083
+        },
+        "TrainerController.start_learning": {
+            "total": 130.37333010000293,
+            "count": 1,
+            "self": 0.00017079999088309705,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 35.88356809999095,
+                    "count": 1,
+                    "self": 35.88356809999095
+                },
+                "TrainerController.advance": {
+                    "total": 94.23767360000056,
+                    "count": 1,
+                    "self": 1.6700010746717453e-05,
+                    "children": {
+                        "env_step": {
+                            "total": 94.23765689998982,
+                            "count": 1,
+                            "self": 94.23764849998406,
+                            "children": {
+                                "SubprocessEnvManager._take_step": {
+                                    "total": 8.400005754083395e-06,
+                                    "count": 1,
+                                    "self": 8.400005754083395e-06
+                                }
+                            }
+                        }
+                    }
+                },
+                "TrainerController._save_models": {
+                    "total": 0.2519176000205334,
+                    "count": 1,
+                    "self": 0.021155000024009496,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.23076259999652393,
+                            "count": 1,
+                            "self": 0.23076259999652393
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
