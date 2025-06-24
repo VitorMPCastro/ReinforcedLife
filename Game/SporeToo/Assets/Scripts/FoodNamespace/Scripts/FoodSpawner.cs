@@ -32,6 +32,7 @@ namespace FoodNamespace
 
         private void OnTick()
         {
+            Debug.Log("FoodSpawner recebeu o Tick!");
             _activeFood.RemoveAll(food => food.IsUnityNull());
 
             while (_activeFood.Count < maxFoodCount)

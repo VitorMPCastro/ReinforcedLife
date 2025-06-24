@@ -1,0 +1,73 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1750736435",
+        "python_version": "3.10.8 (tags/v3.10.8:aaaf517, Oct 11 2022, 16:50:30) [MSC v.1933 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\Alexandre\\Documents\\FATEC\\5o semestre\\AmbientePython\\mlagents-env\\Scripts\\mlagents-learn player_config.yaml --run-id=SegundoTreino",
+        "mlagents_version": "1.1.0",
+        "mlagents_envs_version": "1.1.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.7.1+cpu",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1750736535"
+    },
+    "total": 99.60196070000529,
+    "count": 1,
+    "self": 0.007286900014150888,
+    "children": {
+        "run_training.setup": {
+            "total": 0.11291910000727512,
+            "count": 1,
+            "self": 0.11291910000727512
+        },
+        "TrainerController.start_learning": {
+            "total": 99.48175469998387,
+            "count": 1,
+            "self": 0.0003546999942045659,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 18.15040909999516,
+                    "count": 1,
+                    "self": 18.15040909999516
+                },
+                "TrainerController.advance": {
+                    "total": 81.20918370000436,
+                    "count": 1,
+                    "self": 1.7099984688684344e-05,
+                    "children": {
+                        "env_step": {
+                            "total": 81.20916660001967,
+                            "count": 1,
+                            "self": 81.20915380000952,
+                            "children": {
+                                "SubprocessEnvManager._take_step": {
+                                    "total": 1.2800010154023767e-05,
+                                    "count": 1,
+                                    "self": 1.2800010154023767e-05
+                                }
+                            }
+                        }
+                    }
+                },
+                "trainer_threads": {
+                    "total": 1.100008375942707e-06,
+                    "count": 1,
+                    "self": 1.100008375942707e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 0.12180609998176806,
+                    "count": 1,
+                    "self": 0.02328059999854304,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.09852549998322502,
+                            "count": 1,
+                            "self": 0.09852549998322502
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
