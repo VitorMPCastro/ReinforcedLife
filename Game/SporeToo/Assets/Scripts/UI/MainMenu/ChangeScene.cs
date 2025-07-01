@@ -12,7 +12,7 @@ public class ChangeScene : MonoBehaviour
     }
     public void Playgame()
     {
-        SceneManager.LoadScene("LifeBox");
+        SceneManager.LoadScene("AI Test Scene");
     }
     public void BackMenu()
     {
