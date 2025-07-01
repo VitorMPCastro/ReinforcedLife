@@ -1,0 +1,65 @@
+{
+    "PlayerLearning": {
+        "checkpoints": [
+            {
+                "steps": 699928,
+                "file_path": "results\\TreinoVencedor\\PlayerLearning\\PlayerLearning-699928.onnx",
+                "reward": 12.48979613367392,
+                "creation_time": 1750799054.3003526,
+                "auxillary_file_paths": [
+                    "results\\TreinoVencedor\\PlayerLearning\\PlayerLearning-699928.pt"
+                ]
+            },
+            {
+                "steps": 799928,
+                "file_path": "results\\TreinoVencedor\\PlayerLearning\\PlayerLearning-799928.onnx",
+                "reward": 11.235294293831377,
+                "creation_time": 1750799756.1139114,
+                "auxillary_file_paths": [
+                    "results\\TreinoVencedor\\PlayerLearning\\PlayerLearning-799928.pt"
+                ]
+            },
+            {
+                "steps": 899928,
+                "file_path": "results\\TreinoVencedor\\PlayerLearning\\PlayerLearning-899928.onnx",
+                "reward": 10.0,
+                "creation_time": 1750800445.2757041,
+                "auxillary_file_paths": [
+                    "results\\TreinoVencedor\\PlayerLearning\\PlayerLearning-899928.pt"
+                ]
+            },
+            {
+                "steps": 999928,
+                "file_path": "results\\TreinoVencedor\\PlayerLearning\\PlayerLearning-999928.onnx",
+                "reward": 6.7500001192092896,
+                "creation_time": 1750801171.3348124,
+                "auxillary_file_paths": [
+                    "results\\TreinoVencedor\\PlayerLearning\\PlayerLearning-999928.pt"
+                ]
+            },
+            {
+                "steps": 1000128,
+                "file_path": "results\\TreinoVencedor\\PlayerLearning\\PlayerLearning-1000128.onnx",
+                "reward": 6.8000002145767215,
+                "creation_time": 1750801172.2871177,
+                "auxillary_file_paths": [
+                    "results\\TreinoVencedor\\PlayerLearning\\PlayerLearning-1000128.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000128,
+            "file_path": "results\\TreinoVencedor\\PlayerLearning.onnx",
+            "reward": 6.8000002145767215,
+            "creation_time": 1750801172.2871177,
+            "auxillary_file_paths": [
+                "results\\TreinoVencedor\\PlayerLearning\\PlayerLearning-1000128.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.7.1+cpu"
+    }
+}

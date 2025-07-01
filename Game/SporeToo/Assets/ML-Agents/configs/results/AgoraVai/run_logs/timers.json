@@ -1,0 +1,73 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1750734328",
+        "python_version": "3.10.8 (tags/v3.10.8:aaaf517, Oct 11 2022, 16:50:30) [MSC v.1933 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\Alexandre\\Documents\\FATEC\\5o semestre\\AmbientePython\\mlagents-env\\Scripts\\mlagents-learn player_config.yaml --run-id=AgoraVai",
+        "mlagents_version": "1.1.0",
+        "mlagents_envs_version": "1.1.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.7.1+cpu",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1750735057"
+    },
+    "total": 728.7061504999874,
+    "count": 1,
+    "self": 0.00829410000005737,
+    "children": {
+        "run_training.setup": {
+            "total": 0.12367110000923276,
+            "count": 1,
+            "self": 0.12367110000923276
+        },
+        "TrainerController.start_learning": {
+            "total": 728.5741852999781,
+            "count": 1,
+            "self": 0.0006349000032059848,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 17.530056199990213,
+                    "count": 1,
+                    "self": 17.530056199990213
+                },
+                "TrainerController.advance": {
+                    "total": 710.9195120999939,
+                    "count": 1,
+                    "self": 2.8099981136620045e-05,
+                    "children": {
+                        "env_step": {
+                            "total": 710.9194840000127,
+                            "count": 1,
+                            "self": 710.9194775000215,
+                            "children": {
+                                "SubprocessEnvManager._take_step": {
+                                    "total": 6.499991286545992e-06,
+                                    "count": 1,
+                                    "self": 6.499991286545992e-06
+                                }
+                            }
+                        }
+                    }
+                },
+                "trainer_threads": {
+                    "total": 2.8999929782003164e-06,
+                    "count": 1,
+                    "self": 2.8999929782003164e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 0.1239791999978479,
+                    "count": 1,
+                    "self": 0.01411240000743419,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.10986679999041371,
+                            "count": 1,
+                            "self": 0.10986679999041371
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

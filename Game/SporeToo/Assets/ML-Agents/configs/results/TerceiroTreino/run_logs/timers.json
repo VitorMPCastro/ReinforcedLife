@@ -1,0 +1,68 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1750792929",
+        "python_version": "3.10.8 (tags/v3.10.8:aaaf517, Oct 11 2022, 16:50:30) [MSC v.1933 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\Alexandre\\Documents\\FATEC\\5o semestre\\AmbientePython\\mlagents-env\\Scripts\\mlagents-learn player_config.yaml --run-id=TerceiroTreino",
+        "mlagents_version": "1.1.0",
+        "mlagents_envs_version": "1.1.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.7.1+cpu",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1750793079"
+    },
+    "total": 149.31803870000294,
+    "count": 1,
+    "self": 0.01404849998652935,
+    "children": {
+        "run_training.setup": {
+            "total": 0.17337040000711568,
+            "count": 1,
+            "self": 0.17337040000711568
+        },
+        "TrainerController.start_learning": {
+            "total": 149.1306198000093,
+            "count": 1,
+            "self": 0.00014739998732693493,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 20.919458700023824,
+                    "count": 1,
+                    "self": 20.919458700023824
+                },
+                "TrainerController.advance": {
+                    "total": 127.70722770001157,
+                    "count": 1,
+                    "self": 1.5600002370774746e-05,
+                    "children": {
+                        "env_step": {
+                            "total": 127.7072121000092,
+                            "count": 1,
+                            "self": 127.70720520001487,
+                            "children": {
+                                "SubprocessEnvManager._take_step": {
+                                    "total": 6.89999433234334e-06,
+                                    "count": 1,
+                                    "self": 6.89999433234334e-06
+                                }
+                            }
+                        }
+                    }
+                },
+                "TrainerController._save_models": {
+                    "total": 0.5037859999865759,
+                    "count": 1,
+                    "self": 0.021998199983499944,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.48178780000307597,
+                            "count": 1,
+                            "self": 0.48178780000307597
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
